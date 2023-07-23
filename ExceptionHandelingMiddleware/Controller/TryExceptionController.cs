@@ -20,7 +20,7 @@ namespace ExceptionHandelingMiddleware.Controller
         [HttpGet("{id}")]
         public string Get(int id)
         {
-            return "value"; 
+            
         }
 
         // POST api/<TryExceptionController>
