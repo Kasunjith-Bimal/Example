@@ -6,11 +6,13 @@ namespace DistributeCacheAPI.Repository
 {
     public class CachingMemberRepository : IMemberRepository
     {
-        //first Step cashed repository
-        private readonly MemberRepository _decorate;
+        //first Step // 2nd step cashed repository
+        //private readonly MemberRepository _decorate;
+        //3rd step
+        private readonly IMemberRepository _decorate;
         private readonly IMemoryCache _cache;
 
-        public CachingMemberRepository(MemberRepository decorate, IMemoryCache cache)
+        public CachingMemberRepository(IMemberRepository decorate, IMemoryCache cache)
         {
             _decorate = decorate;
             _cache = cache;
