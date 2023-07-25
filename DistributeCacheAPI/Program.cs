@@ -25,6 +25,7 @@ builder.Services.AddSwaggerGen();
 //});
 //second Step cashed repository
 
+
 //thered (scorter library)
 builder.Services.AddScoped<IMemberRepository, MemberRepository>();
 builder.Services.Decorate<IMemberRepository, CachingMemberRepository>();
