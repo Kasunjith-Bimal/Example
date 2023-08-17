@@ -1,6 +1,6 @@
 
   
-  main status - 
+  main status -  Sample app For Asp .net core
   
   
   https://github.com/Kasunjith-Bimal/Example/actions/workflows/dotnet.yml/badge.svg
