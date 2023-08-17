@@ -4,6 +4,6 @@ namespace DistributeCacheAPI.Interface
 {
     public interface IMemberRepository
     {
-        Member GetById(int id);
+        Task<Member> GetById(int id, CancellationToken cancellationToken);
     }
 }

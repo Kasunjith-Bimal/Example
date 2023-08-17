@@ -21,10 +21,10 @@ namespace DistributeCacheAPI.Controllers
         }
 
 
-        [HttpGet("{id}")]
-        public Member Get(int id)
-        {
-            return _memberRepository.GetById(id);
-        }
+        //[HttpGet("{id}")]
+        //public Member Get(int id)
+        //{
+        //    return _memberRepository.GetById(id);
+        //}
     }
 }

@@ -32,7 +32,12 @@ builder.Services.Decorate<IMemberRepository, CachingMemberRepository>();
 
 //thered 
 
-builder.Services.AddMemoryCache();
+//builder.Services.AddMemoryCache();
+builder.Services.AddStackExchangeRedisCache((rediusOptions) =>
+{
+    var connectionString = builder.Configuration.GetConnectionString("Redis");
+    rediusOptions.Configuration = connectionString;
+});
 //builder.Services.Decorate<IMemberRepository, CachingMemberRepository>();
 
 

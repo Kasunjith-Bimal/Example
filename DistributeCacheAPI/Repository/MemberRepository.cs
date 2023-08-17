@@ -25,9 +25,9 @@ namespace DistributeCacheAPI.Repository
         };
 
 
-        public Member GetById(int id)
+        public async Task<Member> GetById(int id, CancellationToken cancellationToken)
         {
-            return members.First(member => member.Id == id);
+            return await Task.FromResult(members.First(member => member.Id == id));
         }
     }
 }

@@ -22,9 +22,16 @@ namespace DistributeCacheAPI.Controllers
 
 
         [HttpGet("{id}")]
-        public Member Get(int id)
+        public  async Task<IActionResult> Get(int id, CancellationToken cancellationToken)
         {
-            return _memberRepository.GetById(id);
+            var member =  await _memberRepository.GetById(id, cancellationToken);
+
+            if(member is not null)
+            {
+                return Ok(member);
+            }
+
+            return NotFound();
         }
     }
 }
