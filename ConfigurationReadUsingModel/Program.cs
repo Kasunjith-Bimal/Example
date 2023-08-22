@@ -2,7 +2,8 @@ using ConfigurationReadUsingModel;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.Configure<MySettings>(builder.Configuration.GetSection(nameof(MySettings)));
+//builder.Services.Configure<MySettings>(builder.Configuration.GetSection(nameof(MySettings)));
+builder.Services.ConfigureOptions<ApplicationOptionsSetup>();
 // Add services to the container.
 
 builder.Services.AddControllers();
