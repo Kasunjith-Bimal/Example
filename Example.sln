@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GitAction", "GitAction\GitA
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DistributeCacheAPI", "DistributeCacheAPI\DistributeCacheAPI.csproj", "{598E8A15-DC1C-4A50-BD8A-D8268A2F5388}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConfigurationReadUsingModel", "ConfigurationReadUsingModel\ConfigurationReadUsingModel.csproj", "{D90A167C-7E5C-4104-839C-4FA1FF055D8B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConfigurationReadUsingModel", "ConfigurationReadUsingModel\ConfigurationReadUsingModel.csproj", "{D90A167C-7E5C-4104-839C-4FA1FF055D8B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuilderServicesOrganize", "BuilderServicesOrganize\BuilderServicesOrganize.csproj", "{A8B5D7C2-8993-4882-9466-D5A9BC7DCDB6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{D90A167C-7E5C-4104-839C-4FA1FF055D8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D90A167C-7E5C-4104-839C-4FA1FF055D8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D90A167C-7E5C-4104-839C-4FA1FF055D8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8B5D7C2-8993-4882-9466-D5A9BC7DCDB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8B5D7C2-8993-4882-9466-D5A9BC7DCDB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8B5D7C2-8993-4882-9466-D5A9BC7DCDB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8B5D7C2-8993-4882-9466-D5A9BC7DCDB6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
